@@ -1,1 +1,1 @@
-This is a python directory for pyhton projects
+This is a python directory for python projects
