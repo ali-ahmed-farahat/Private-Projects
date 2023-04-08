@@ -1,0 +1,32 @@
+<?php
+
+$employees = [
+    ['name' => 'Ali','age' => 18, 'uni' => 'Helwan'],
+    ['name' => 'Joe','age' => 20, 'uni' => 'Must'],
+    ['name' => 'Badr','age' => 19, 'uni' => 'Jezirah']
+];
+
+$employees[] = ['name' => 'Anas','age' => 17, 'uni' => 'Helwan'];
+
+$popped = array_pop($employees);
+
+
+?>
+
+<html>
+
+<head>
+    <title> <?php echo 'PHP noob'; ?> </title>
+</head>
+<body>
+<h2>Employees at Tech company</h2>
+<ul>
+<?php  foreach ($employees as $employee) { ?>
+
+<h3><?php echo $employee['name'] ?></h5>
+<li> <?php echo $employee['age'] ?></li>
+<li> <?php echo $employee['uni'] ?></li>
+<?php } ?>
+</ul>
+</body>
+</html>
