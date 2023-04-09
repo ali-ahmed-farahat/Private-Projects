@@ -49,5 +49,4 @@
 		<!-- Book a flight button -->
 		<button class="btn-book">Book a flight</button>
 	</header>
-</body>
-</html>
+
