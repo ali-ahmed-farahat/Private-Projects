@@ -3,6 +3,7 @@
 <head>
 	<title>Gamasa Airways</title>
 	<style>
+
 		/* Set primary and secondary colors */
 		:root {
 			--primary-color: #1da1f2;

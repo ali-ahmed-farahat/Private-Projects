@@ -3,19 +3,43 @@
 #get sends data in th url
 #post sends data in the request header (HIDDEN)
 if(isset($_POST['submit'])){
-    echo "THE DATA SENT FROM THE LAST FORM SUBMITION:<br>";
-    echo htmlspecialchars($_POST['email']);
-    echo "<br>";
-    echo htmlspecialchars($_POST['from']);
-    echo "<br>";
-    echo htmlspecialchars($_POST['destination']);
+    if (empty($_POST['email']))
+    {
+    echo "Please enter a email";
+    }else{
+        echo htmlspecialchars($_POST['email']);
+        echo "<br>";
+    }
+    if (empty($_POST['destination']))
+    {
+    echo "Please enter a Destination";
+    }else{
+        echo htmlspecialchars($_POST['destination']);
+        echo "<br>";
+    }
+    if (empty($_POST['from']))
+    {
+    echo "Please enter the depart country";
+    }else{
+        echo htmlspecialchars($_POST['from']);
+    }
+    //echo "THE DATA SENT FROM THE LAST FORM SUBMITION:<br>";
+    
+
+
 }
 ?>
 
 <html>
 <?php include "header.php"; ?>
 <head>
-
+<style>
+		.red-error {
+  		color: #FF0000;
+  		font-size: 14px;
+  		margin-top: 5px;
+		}
+</style>
 </head>
 <h4 class = 'center'>Book a flight</h4>
 
