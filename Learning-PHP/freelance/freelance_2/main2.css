@@ -1,0 +1,104 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+}
+
+header {
+      background-color: #27292a;
+      color: #fff;
+      padding: 20px;
+}
+
+h1 {
+      font-size: 40px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+}
+
+nav ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+nav ul li {
+      margin: 0 10px;
+}
+
+nav ul li a {
+      color: #fff;
+      text-decoration: none;
+}
+
+nav ul li a:hover {
+      color: #e75e8d;
+}
+
+main {
+      padding: 50px;
+}
+
+.details {
+      background-color: #e75e8d;
+      color: #fff;
+      padding: 100px 0;
+      text-align: center;
+}
+
+.details h2 {
+      font-size: 50px;
+      margin-bottom: 20px;
+}
+
+.container {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+}
+
+.game {
+      background-color: #ffffff;
+      padding: 30px;
+      margin: 20px;
+      text-align: center;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+      flex-basis: 300px;
+}
+
+.game img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+}
+
+.game h3 {
+      font-size: 25px;
+      margin-bottom: 10px;
+      color: #a84a6b;
+}
+
+.game p {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 20px;
+}
+
+.game .button {
+      background-color: #fff;
+      color: #e75e8d;
+      text-decoration: none;
+      border: 2px solid #e75e8d;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 30px;
+      transition: 0.4s;
+}
