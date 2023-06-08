@@ -309,12 +309,11 @@ while True:
                         booking(username,title) #booking the movie
                     elif customer_choice == '2':  #if he wants to see details of a specific movie
                         title= input("Please enter the title of the movie: ")
-                        if not movieDetails(title):
-                            print("this movie doesn't exist!")
+                        if movieDetails(title):
+                            print("-----")
                             continue
                         else:
-                            movieDetails(title)
-                            continue
+                            print("This movie doesn't exist")
                 else:
                     print("Wrong username or password!")
                     continue
