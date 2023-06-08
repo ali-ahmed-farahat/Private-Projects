@@ -7,4 +7,4 @@ These concepts include:<br />
 	-concepts on "basics" directory <br />
 	-creating array of contracts<br />
 	-using addresses to store numbers to specific addresses using index<br />
-	-retreiving number stored to specific address using it's arrayn index<br />
+	-retreiving number stored to specific address using it's array index<br />
