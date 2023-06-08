@@ -1,6 +1,3 @@
-
-
-
 def movieDetails(title):
     try:
         with open('movielist.txt','r') as file:
@@ -16,6 +13,3 @@ def movieDetails(title):
     except Exception:
         print(Exception)
     return False
-title = input("enter the title of the movie: ")
-if not movieDetails(title):
-    print("this title doesn't exist")
