@@ -292,7 +292,7 @@ while True:
         elif type_ofuser == '2': #if 2 (customer)
             username=input("Please enter your username: ") #
             password=input("Please enter your password: ") #takes the data of the user(username-password)
-            if os.path.exists("vendor.txt"):
+            if os.path.exists("customer.txt"):
                 if verifylogin(username,password,'customer.txt'):
                     ShowAllMovies()
                     print("1-Book a movie\n2-Show specific movie details\nany other key to exit")
