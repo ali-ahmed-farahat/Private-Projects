@@ -2,21 +2,21 @@ import os.path
 
 def addM(title,description):
     try:
-        if os.path.exists('./movielist.txt'):
-            with open('movielist.txt','r') as f:
-                lines = f.readlines()
-        else:
-            print("doesn't exist")
-            f=open("movielist.txt",'a+')
-            lines = f.readlines()
         if moviecheck(title):
             return False
         else:
-                NewMovie = (title + ',' + description)
+            if os.path.exists('./movielist.txt'):
+                NewMovie = ('\n' + title + ',' + description)
                 file = open('movielist.txt','a')
-                file.write('\n' + NewMovie + '\nblank')
+                file.seek(0, 2)
+                file.write(NewMovie)
                 print("Movie added successfully!")
                 return True
+            else:
+                f=open("movielist.txt",'a+')
+                NewMovie = (title + ',' + description)
+                f.write(NewMovie)
+
     except Exception:
         print(Exception)
 def moviecheck(title):
