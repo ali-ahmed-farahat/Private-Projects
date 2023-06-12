@@ -1,6 +1,7 @@
 # Private-Projects
 This is a repository for learning new languages, and private projects for self development
+<ul>
 Languages included:
-PHP
-Python
-Solidity
+<li>PHP
+<li>Python
+<li>Solidity
