@@ -11,7 +11,7 @@ mapping (address => uint256) public addressToValue;
 function fund() public payable {
 
     //if I wanted to make sure that this funding has at least 100$ for example
-    uint256 minimum = 100; //set minimum price to 100$
+    uint256 minimum = 100 * 10 ** 18; //set minimum price to 100$
 
     //making sure that the amount of ether sent is equivalent to more than or = 100 USD
     require(converstionRate(msg.value) >= minimum, "Send more ether");
@@ -31,13 +31,13 @@ function getprice() public view returns(uint256){
     AggregatorV3Interface feedprice =
          AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306);
     (,int256 answer,,,) = feedprice.latestRoundData();
-    return uint256(answer); //if we want to get accurate price and to real price divide by 10**8
+    return uint256(answer * 10 ** 10); //if we want to get accurate price and to real price divide by 10**8
 }
 
 function converstionRate(uint256 amount) public view returns(uint256){
     uint256 price = getprice(); //get price of 1ETH in USD
     uint rate = amount * price; //amount of eth * price of eth = how much dollars * 10 ** 8
-    return rate / 10 ** 8;
+    return rate / 10 ** 18;
 
 }
 }
