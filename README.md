@@ -5,3 +5,4 @@ Languages included:
 <li>PHP
 <li>Python
 <li>Solidity
+<li>Javascript</li>
