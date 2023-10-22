@@ -6,3 +6,4 @@ Languages included:
 <li>Python
 <li>Solidity
 <li>Javascript</li>
+<li>Java</li>
